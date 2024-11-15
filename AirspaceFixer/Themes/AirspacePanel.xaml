@@ -4,7 +4,7 @@
     <Style TargetType="local:AirspacePanel">
         <Setter Property="Template">
             <Setter.Value>
-				<ControlTemplate TargetType="local:AirspacePanel">
+                <ControlTemplate TargetType="local:AirspacePanel">
 
                     <Grid HorizontalAlignment="{TemplateBinding HorizontalAlignment}" VerticalAlignment="{TemplateBinding VerticalAlignment}">
                         <Image Name="PART_AirspaceScreenshot" Visibility="Hidden" />

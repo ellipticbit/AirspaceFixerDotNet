@@ -7,7 +7,7 @@ If you've ever had to host any WinForms forms inside a WPF project, you might kn
 `AirspacePanel` aims to fix this problem by allowing you to host any content you like inside of it, and swapping out the content for a screenshot of the content when you need to place a modal dialog on top of it. This swap is done by using the dependency property `FixAirspace`. Here is an example:
 
     <Window x:Class="AirspaceFixerSample.MainWindow" 
-        xmlns:asf="clr-namespace:AirspaceFixer;assembly=AirspaceFixer">
+        xmlns:asf="clr-namespace:AirspaceFixer;assembly=AirspaceFixerDotNet">
 
     <asf:AirspacePanel FixAirspace="{Binding FixAirspace}">
         <WebBrowser x:Name="Browser" />

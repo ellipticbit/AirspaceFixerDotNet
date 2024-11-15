@@ -3,7 +3,7 @@
                     xmlns:local="clr-namespace:AirspaceFixer">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/AirspaceFixer;component/Themes/AirspacePanel.xaml" />
+        <ResourceDictionary Source="/AirspaceFixerDotNet;component/Themes/AirspacePanel.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
 </ResourceDictionary>
