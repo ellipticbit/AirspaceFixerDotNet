@@ -1,46 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-	<TargetFrameworks>net6.0-windows;net452</TargetFrameworks>
-    <OutputType>Library</OutputType>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <UseWindowsForms>true</UseWindowsForms>
-    <UseWPF>true</UseWPF>
-    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.6</Version>
-    <Company>ChrisBJohnsonDev</Company>
-    <Authors>ChrisBJohnsonDev</Authors>
-    <Description>AirspacePanel fixes all Airspace issues with WPF-hosted Winforms.</Description>
-    <PackageProjectUrl>https://github.com/chris84948/AirspaceFixer</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/chris84948/AirspaceFixer</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>Upgraded to build for both NET 6 and NET Framework 4.5.2+</PackageReleaseNotes>
-    <PackageLicenseFile>C:\Github\c#\AirspaceFixer\LICENSE</PackageLicenseFile>
-    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-  </PropertyGroup>
-  <ItemGroup>
-    <None Remove="LICENSE.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AppDesigner Include="Properties\" />
-  </ItemGroup>
-  <PropertyGroup>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-  </PropertyGroup>
-  <ItemGroup>
-  	<None Include="LICENSE.txt" Pack="true" PackagePath="" />
-  </ItemGroup>
-  <PropertyGroup>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-  </PropertyGroup>
-  <ItemGroup>
-  	<None Include="License.txt" Pack="true" PackagePath="" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.3.326103">
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.Windows.Compatibility" Version="6.0.0" />
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFrameworks>net8.0-windows;net462</TargetFrameworks>
+        <OutputType>Library</OutputType>
+        <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+        <UseWindowsForms>true</UseWindowsForms>
+        <UseWPF>true</UseWPF>
+        <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <FileVersion>2.0.0.0</FileVersion>
+        <Version>2.0.0</Version>
+        <Company>EllipticBit LLC</Company>
+        <Authors>EllipticBit LLC, ChrisBJohnsonDev</Authors>
+        <Description>AirspacePanel fixes all Airspace issues with WPF-hosted Winforms.</Description>
+        <PackageProjectUrl>https://github.com/ellipticbit/AirspaceFixerDotNet</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/ellipticbit/AirspaceFixerDotNet</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageReleaseNotes>Upgraded to build with both NET 8.0 and NET Framework 4.6.2+</PackageReleaseNotes>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 </Project>

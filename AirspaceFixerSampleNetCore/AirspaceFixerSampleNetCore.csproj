@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <UseWPF>true</UseWPF>
+        <StartupObject>AirspaceFixerSample.App</StartupObject>
+        <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <ApplicationVisualStyles>true</ApplicationVisualStyles>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="..\AirspaceFixerSample\App.xaml.cs" Link="App.xaml.cs" />
+        <Compile Include="..\AirspaceFixerSample\AssemblyInfo.cs" Link="AssemblyInfo.cs" />
+        <Compile Include="..\AirspaceFixerSample\MainWindow.xaml.cs" Link="MainWindow.xaml.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ApplicationDefinition Include="..\AirspaceFixerSample\App.xaml" Link="App.xaml">
+            <Generator>MSBuild:Compile</Generator>
+        </ApplicationDefinition>
+        <Page Include="..\AirspaceFixerSample\MainWindow.xaml" Link="MainWindow.xaml">
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\AirspaceFixer\AirspaceFixer.csproj" />
+    </ItemGroup>
+
+</Project>

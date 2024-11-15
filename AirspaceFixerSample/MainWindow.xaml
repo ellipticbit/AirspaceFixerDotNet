@@ -57,10 +57,11 @@
                                     DockPanel.Dock="Right" />
                         </Grid>
 
-                        <asf:AirspacePanel x:Name="airspacePanel"
-                                           Grid.Row="1">
-                            <WebBrowser x:Name="Browser"
-                                        Navigating="Browser_Navigating" />
+                        <asf:AirspacePanel x:Name="airspacePanel" Visibility="Visible" Grid.Row="1">
+                            <Grid>
+                                <!--<WindowsFormsHost x:Name="InventoryHost" Foreground="Black" Background="Black" Visibility="Hidden" />-->
+                                    <WebBrowser x:Name="Browser" Visibility="Visible" Navigating="Browser_Navigating" />
+                            </Grid>
                         </asf:AirspacePanel>
 
                     </Grid>
